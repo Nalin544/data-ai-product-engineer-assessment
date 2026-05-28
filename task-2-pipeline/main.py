@@ -1,5 +1,6 @@
 from fetch_data import fetch_crypto_data
 from transform_data import transform_data
+from load_to_bigquery import load_data_to_bigquery
 
 
 def main():
@@ -14,6 +15,7 @@ def main():
 
     print("\nTransformed Data:\n")
     print(transformed_df)
+    load_data_to_bigquery(transformed_df)
 
 
 if __name__ == "__main__":
