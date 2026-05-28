@@ -71,7 +71,6 @@ These features add significant technical complexity and require validated histor
 
 # Architecture
 
-```text
 Marketing Platforms APIs
         ↓
 Data Ingestion Layer
@@ -81,7 +80,6 @@ BigQuery Data Warehouse
 Transformation + Insight Engine
         ↓
 Dashboard/UI
-```
 
 The system collects campaign data from multiple marketing platforms through APIs. The data is processed and stored in BigQuery, where transformations and insight generation are performed before displaying results in the dashboard interface.
 
